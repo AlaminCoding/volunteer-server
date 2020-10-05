@@ -66,4 +66,4 @@ client.connect((err) => {
   app.get("/", (req, res) => res.send("HEELO"));
 });
 
-app.listen("4200", console.log("Listening to 4200"));
+app.listen(process.env.PORT || "4200");
